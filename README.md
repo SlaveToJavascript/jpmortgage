@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# J.P. Mortgage, the NextGen AI solution that provides enhanced mortgage evaluation, powered by automated property valuation and credit risk analysis. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A mortgage evaluation application, built for SMU IS453 Financial Analytics in 2021.
 
 ## Available Scripts
 
