@@ -32,20 +32,20 @@ export default function EmploymentDetails() {
     <React.Fragment>
       <Grid container spacing={3}>
         <Grid item xs={12} md={6}>
-            <FormControl variant="standard" fullWidth required>
-                <InputLabel id="demo-simple-select-standard-label">Employment Status</InputLabel>
-                <Select
-                labelId="demo-simple-select-standard-label"
-                id="employmentStatus"
-                onChange={handleChange('employmentStatus')}
-                label="Employment Status"
-                >
-                <MenuItem value="employed">Employed</MenuItem>
-                <MenuItem value="selfEmployed">Self-employed</MenuItem>
-                <MenuItem value="unemployed">Unemployed</MenuItem>
-                <MenuItem value="retired">Retired</MenuItem>
-                </Select>
-            </FormControl>
+          <FormControl variant="standard" fullWidth required>
+              <InputLabel id="demo-simple-select-standard-label">Employment Status</InputLabel>
+              <Select
+              labelId="demo-simple-select-standard-label"
+              id="employmentStatus"
+              onChange={handleChange('employmentStatus')}
+              label="Employment Status"
+              >
+              <MenuItem value="employed">Employed</MenuItem>
+              <MenuItem value="selfEmployed">Self-employed</MenuItem>
+              <MenuItem value="unemployed">Unemployed</MenuItem>
+              <MenuItem value="retired">Retired</MenuItem>
+              </Select>
+          </FormControl>
         </Grid>
         <Grid item xs={12} md={6}>
             <TextField

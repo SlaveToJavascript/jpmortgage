@@ -12,6 +12,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormLabel from '@mui/material/FormLabel';
+import FormHelperText from '@mui/material/FormHelperText';
 
 export default function MortgageLoanDetails() {
   const [values, setValues] = React.useState({
@@ -55,7 +56,7 @@ export default function MortgageLoanDetails() {
             >
               <FormControlLabel value="10" control={<Radio />} label="10 years" />
               <FormControlLabel value="20" control={<Radio />} label="20 years" />
-              <FormControlLabel value="20" control={<Radio />} label="30 years" />
+              <FormControlLabel value="30" control={<Radio />} label="30 years" />
             </RadioGroup>
           </FormControl>
         </Grid>
@@ -72,7 +73,7 @@ export default function MortgageLoanDetails() {
           </FormControl>
         </Grid>
         <Grid item xs={12} md={6}>
-          <FormControl fullWidth variant="standard" required>
+          <FormControl fullWidth variant="standard">
             <InputLabel htmlFor="fixedAndVariableBonus">Outstanding Mortgage Amount (for HEL)</InputLabel>
             <Input
               type="number"
@@ -81,6 +82,9 @@ export default function MortgageLoanDetails() {
               onChange={handleChange('outstandingMortgage')}
               startAdornment={<InputAdornment position="start">S$</InputAdornment>}
             />
+            <FormHelperText id="component-helper-text">
+              Leave blank if not applicable.
+            </FormHelperText>
           </FormControl>
         </Grid>
         {/* <Grid item xs={12}>

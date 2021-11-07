@@ -18,8 +18,9 @@ import EmploymentDetails from './EmploymentDetails';
 import Review from './Review';
 import Logo from '../src/static/img/logo.png'
 import CashFlowNetWorthDetails from './CashFlowNetWorthDetails';
-import PropertyDetails from './PropertyDetails';
+import PrivatePropertyDetails from './PrivatePropertyDetails';
 import CircularProgress from '@mui/material/CircularProgress';
+import PublicPropertyDetails from './PublicPropertyDetails';
 
 function Copyright() {
   return (
@@ -47,7 +48,8 @@ function getStepContent(step) {
     case 3:
       return <CashFlowNetWorthDetails />
     case 4:
-      return <PropertyDetails />
+      // return <PublicPropertyDetails />
+      return <Review />
     default:
       throw new Error('Unknown step');
   }
@@ -114,7 +116,7 @@ export default function Home() {
                   Application is loading...
                 </Typography>
                 <Typography variant="subtitle1">
-                  Please check your email for further details.
+                  Please check your email inbox for the confirmation email.
                 </Typography>
                 <CircularProgress size={50} style={{marginLeft: "40%", marginTop: "20px", marginBottom: "15px"}} />
               </React.Fragment>
@@ -124,7 +126,8 @@ export default function Home() {
                 <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
                   {activeStep !== 0 && (
                     <Button onClick={handleBack} sx={{ mt: 3, ml: 1 }}>
-                      Back
+                      Reject & Close
+                      {/* Reject & Close */}
                     </Button>
                   )}
 
@@ -133,7 +136,8 @@ export default function Home() {
                     onClick={handleNext}
                     sx={{ mt: 3, ml: 1 }}
                   >
-                    {activeStep === steps.length - 1 ? 'Submit' : 'Next'}
+                    {activeStep === steps.length - 1 ? 'Accept & Proceed to make appt booking' : 'Next'} 
+                    {/* Accept & Proceed to make appt booking */}
                   </Button>
                 </Box>
               </React.Fragment>

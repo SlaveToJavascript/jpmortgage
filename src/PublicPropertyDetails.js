@@ -16,7 +16,7 @@ import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import FormHelperText from '@mui/material/FormHelperText';
 
-export default function PropertyDetails() {
+export default function PublicPropertyDetails() {
   const [values, setValues] = React.useState({
     monthlyIncome: 0,
     fixedAllowance: 0,
@@ -35,27 +35,13 @@ export default function PropertyDetails() {
         <Grid item xs={12} md={6}>
             <TextField
                 required
-                id="postalCode"
-                name="postalCode"
-                label="Property Address Postal Code"
+                id="propertyAddress"
+                name="propertyAddress"
+                label="Property Address"
                 fullWidth
                 variant="standard"
-                onChange={handleChange('postalCode')}
+                onChange={handleChange('propertyAddress')}
             />
-        </Grid>
-        <Grid item xs={12} md={6}>
-            <FormControl component="fieldset" required>
-                <FormLabel component="legend">Property Type</FormLabel>
-                <RadioGroup
-                    row
-                    aria-label="propertyType"
-                    name="row-radio-buttons-group"
-                >
-                    <FormControlLabel value="apartment" control={<Radio />} label="Apartment" />
-                    <FormControlLabel value="condo" control={<Radio />} label="Condo" />
-                    <FormControlLabel value="other" control={<Radio />} label="Other" />
-                </RadioGroup>
-            </FormControl>
         </Grid>
         <Grid item xs={12} md={6}>
             <FormControl variant="standard" fullWidth required>
@@ -90,18 +76,36 @@ export default function PropertyDetails() {
             </FormControl>
         </Grid>
         <Grid item xs={12} md={6}>
-            <FormControl component="fieldset" required>
-                <FormLabel component="legend">Type of Sale</FormLabel>
-                <RadioGroup
-                    row
-                    aria-label="saleType"
-                    name="row-radio-buttons-group"
+            <FormControl variant="standard" fullWidth required>
+                <InputLabel id="demo-simple-select-standard-label">Flat Model</InputLabel>
+                <Select
+                    labelId="demo-simple-select-standard-label"
+                    id="flatModel"
+                    onChange={handleChange('flatModel')}
+                    label="Flat Model"
                 >
-                    <FormControlLabel value="resale" control={<Radio />} label="Resale" />
-                    <FormControlLabel value="newSale" control={<Radio />} label="New Sale" />
-                    <FormControlLabel value="subSale" control={<Radio />} label="Sub Sale" />
-                </RadioGroup>
-            </FormControl>
+                    <MenuItem value="newGen">New Generation</MenuItem>
+                    <MenuItem value="modelA">Model A</MenuItem>
+                    <MenuItem value="dbss">DBSS</MenuItem>
+                    <MenuItem value="improved">Improved</MenuItem>
+                    <MenuItem value="standard">Standard</MenuItem>
+                    <MenuItem value="adjoinedFlat">Adjoined Flat</MenuItem>
+                    <MenuItem value="simplified">Simplified</MenuItem>
+                    <MenuItem value="premiumApartment">Premium Apartment</MenuItem>
+                    <MenuItem value="apartment">Apartment</MenuItem>
+                    <MenuItem value="maisonette">Maisonette</MenuItem>
+                    <MenuItem value="modelA2">Model A2</MenuItem>
+                    <MenuItem value="typeS1">Type S1</MenuItem>
+                    <MenuItem value="terrace">Terrace</MenuItem>
+                    <MenuItem value="2room">2-room</MenuItem>
+                    <MenuItem value="typeS2">Type S2</MenuItem>
+                    <MenuItem value="modeAMaisonette">Model A-Maisonette</MenuItem>
+                    <MenuItem value="premiumApartmentLoft">Premium Apartment Loft</MenuItem>
+                    <MenuItem value="premiumMaisonette">Premium Maisonette</MenuItem>
+                    <MenuItem value="multiGeneration">Multi-Generation</MenuItem>
+                    <MenuItem value="improvedMaisonette">Improved Maisonette</MenuItem>
+                </Select>
+          </FormControl>
         </Grid>
       </Grid>
     </React.Fragment>

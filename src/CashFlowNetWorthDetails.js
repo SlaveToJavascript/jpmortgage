@@ -44,15 +44,15 @@ export default function CashFlowNetWorthDetails() {
             </FormControl>
         </Grid>
         <Grid item xs={12} md={6}>
-            <TextField
-                required
-                id="otherSources"
-                name="otherSources"
-                label="Other Sources of Income"
-                fullWidth
-                variant="standard"
-                onChange={handleChange('otherSources')}
-            />
+            <FormControl fullWidth variant="standard" required>
+                <InputLabel htmlFor="incomeOther">Monthly Income from Other Sources</InputLabel>
+                <Input
+                type="number"
+                id="incomeOther"
+                onChange={handleChange('incomeOther')}
+                startAdornment={<InputAdornment position="start">S$</InputAdornment>}
+                />
+            </FormControl>
         </Grid>
         <Grid item xs={12} md={6}>
             <FormControl fullWidth variant="standard" required>
@@ -79,7 +79,7 @@ export default function CashFlowNetWorthDetails() {
             </FormControl>
         </Grid>
         <Grid item xs={12} sm={6}>
-            <FormControl fullWidth variant="standard" required>
+            <FormControl fullWidth variant="standard">
                 <InputLabel htmlFor="netAssets">Net Assets</InputLabel>
                 <Input
                     type="number"
@@ -88,12 +88,12 @@ export default function CashFlowNetWorthDetails() {
                     startAdornment={<InputAdornment position="start">S$</InputAdornment>}
                 />
                 <FormHelperText id="component-helper-text">
-                    Please input "0" if your answer to the previous question is "No".
+                    Leave blank if your answer to the previous question is "No".
                 </FormHelperText>
             </FormControl>
         </Grid>
         <Grid item xs={12} md={6}>
-            <FormControl variant="standard" fullWidth required>
+            <FormControl variant="standard" fullWidth>
                 <InputLabel htmlFor="carAge">Age of Car (if any)</InputLabel>
                 <Input
                     type="number"
@@ -102,7 +102,7 @@ export default function CashFlowNetWorthDetails() {
                     endAdornment={<InputAdornment position="end">years</InputAdornment>}
                 />
                 <FormHelperText id="component-helper-text">
-                    Please input "0" if not applicable.
+                    Leave blank if not applicable.
                 </FormHelperText>
             </FormControl>
         </Grid>

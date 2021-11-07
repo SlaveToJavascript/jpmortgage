@@ -44,17 +44,52 @@ export default function Review() {
 
   return (
     <React.Fragment>
-      <Typography variant="h6" gutterBottom>
-        Details of Loan
+      <Typography variant="h6" gutterBottom style={{marginTop: "15px"}}>
+        Mortgage Loan Package
       </Typography>
       <List disablePadding>
         <ListItem sx={{ py: 1, px: 0 }}>
-          <ListItemText primary="Total Loan Amount" />
-          <Typography variant="body1" sx={{ fontWeight: 700 }}>S$252,000.00</Typography>
+          <ListItemText primary="Property Address" />
+          <Typography variant="body1" sx={{ fontWeight: 700 }}>1 Beach Road S190001</Typography>
         </ListItem>
-        <ListItem key="installment" sx={{ py: 1, px: 0 }}>
+        <ListItem sx={{ py: 1, px: 0 }}>
+          <ListItemText primary="Property Type" />
+          <Typography variant="body1" sx={{ fontWeight: 700 }}>HDB Improved</Typography>
+        </ListItem>
+        <ListItem sx={{ py: 1, px: 0 }}>
+          <ListItemText primary="Property Size" />
+          <Typography variant="body1" sx={{ fontWeight: 700 }}>68.0 sqm</Typography>
+        </ListItem>
+        <ListItem sx={{ py: 1, px: 0 }}>
+          <ListItemText primary="Property Storey" />
+          <Typography variant="body1" sx={{ fontWeight: 700 }}>17</Typography>
+        </ListItem>
+        <ListItem sx={{ py: 1, px: 0 }}>
+          <ListItemText primary="Remaining Lease" />
+          <Typography variant="body1" sx={{ fontWeight: 700 }}>57 years</Typography>
+        </ListItem>
+        <ListItem sx={{ py: 1, px: 0 }}>
+          <ListItemText primary="Requested Loan Amount" />
+          <Typography variant="body1" sx={{ fontWeight: 700 }}>S$400,000</Typography>
+        </ListItem>
+        <ListItem sx={{ py: 1, px: 0 }}>
+          <ListItemText primary="Maximum Loan Amount" />
+          <Typography variant="body1" sx={{ fontWeight: 700 }}>S$266,250</Typography>
+        </ListItem>
+        <ListItem sx={{ py: 1, px: 0 }}>
+          <ListItemText primary="Loan Tenure" />
+          <Typography variant="body1" sx={{ fontWeight: 700 }}>30 years</Typography>
+        </ListItem>
+        <ListItem sx={{ py: 1, px: 0 }}>
+          <ListItemText primary="Interest Rate/Effective Interest Rate" />
+          <Typography variant="body1" sx={{ fontWeight: 700 }}>2.25%/2.28%</Typography>
+        </ListItem>
+        <ListItem sx={{ py: 1, px: 0 }}>
+          <ListItemText primary="Installment per Month" />
+          <Typography variant="body1" sx={{ fontWeight: 700 }}>S$1,017.73</Typography>
+        </ListItem>
+        {/* <ListItem key="installment" sx={{ py: 1, px: 0 }}>
           <ListItemText primary="Installment" secondary="Monthly interest payment for" />
-          {/* <Typography variant="body1" sx={{ fontWeight: 700 }}>S$xxxxx</Typography> */}
         </ListItem>
         <ListItem>
           <ListItemText
@@ -73,7 +108,7 @@ export default function Review() {
             primary="10-year tenure"
           />
           <Typography variant="body1" sx={{ fontWeight: 700 }}>S$600</Typography>
-        </ListItem>
+        </ListItem> */}
         {/* <ListItem sx={{ py: 1, px: 0 }}>
           <ListItemText primary="Total" />
           <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>

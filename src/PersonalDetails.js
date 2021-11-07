@@ -108,12 +108,12 @@ export default function PersonalDetails() {
         </Grid>
         <Grid item xs={12} sm={6}>
           <FormControl variant="standard" fullWidth required>
-            <InputLabel id="demo-simple-select-standard-label">Marrital Status</InputLabel>
+            <InputLabel id="demo-simple-select-standard-label">Marital Status</InputLabel>
             <Select
               labelId="demo-simple-select-standard-label"
-              id="marritalStatus"
-              onChange={handleChange('marritalStatus')}
-              label="Marrital Status"
+              id="maritalStatus"
+              onChange={handleChange('maritalStatus')}
+              label="Marital Status"
             >
               <MenuItem value="single">Single</MenuItem>
               <MenuItem value="married">Married</MenuItem>
