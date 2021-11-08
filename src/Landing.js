@@ -1,10 +1,9 @@
 import * as React from 'react';
 import { useEffect } from 'react';
 import Container from '@mui/material/Container';
-// import Logo from '../src/static/img/logo.png'
 import Slide from "react-reveal/Slide";
 import Fade from 'react-reveal/Fade';
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { animateScroll as scroll } from 'react-scroll'
 
 export default function Home() {
     useEffect(() => { document.body.style.backgroundColor = '#223d6c' }, [])

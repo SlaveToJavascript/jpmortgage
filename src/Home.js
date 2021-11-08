@@ -1,5 +1,4 @@
 import * as React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
@@ -18,9 +17,7 @@ import EmploymentDetails from './EmploymentDetails';
 import Review from './Review';
 import Logo from '../src/static/img/logo.png'
 import CashFlowNetWorthDetails from './CashFlowNetWorthDetails';
-import PrivatePropertyDetails from './PrivatePropertyDetails';
 import CircularProgress from '@mui/material/CircularProgress';
-import PublicPropertyDetails from './PublicPropertyDetails';
 
 function Copyright() {
   return (
