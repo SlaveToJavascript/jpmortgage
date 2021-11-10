@@ -18,6 +18,7 @@ import Review from './Review';
 import Logo from '../src/static/img/logo.png'
 import CashFlowNetWorthDetails from './CashFlowNetWorthDetails';
 import CircularProgress from '@mui/material/CircularProgress';
+import PublicPropertyDetails from './PublicPropertyDetails';
 
 function Copyright() {
   return (
@@ -133,7 +134,7 @@ export default function Home() {
                     onClick={handleNext}
                     sx={{ mt: 3, ml: 1 }}
                   >
-                    {activeStep === steps.length - 1 ? 'Accept & Proceed to make appt booking' : 'Next'} 
+                    {activeStep === steps.length - 1 ? 'Submit' : 'Next'} 
                     {/* Accept & Proceed to make appt booking */}
                   </Button>
                 </Box>
