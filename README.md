@@ -1,8 +1,8 @@
 # J.P. Mortgage, the NextGen AI solution that provides enhanced mortgage evaluation, powered by automated property valuation and credit risk analysis. 
 
-A mortgage evaluation application built for SMU IS453 Financial Analytics in 2021.
+### A mortgage evaluation application built for SMU IS453 Financial Analytics in 2021.
 
-## Available Scripts
+<!-- ## Available Scripts
 
 In the project directory, you can run:
 
@@ -67,4 +67,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
