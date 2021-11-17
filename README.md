@@ -3,7 +3,7 @@
 ## A mortgage evaluation application built for SMU IS453 Financial Analytics in 2021.
 
 #### Demo
-![Demo]()
+![Demo](https://github.com/SlaveToJavascript/jpmortgage/blob/master/demo.gif)
 
 <!-- ## Available Scripts
 
