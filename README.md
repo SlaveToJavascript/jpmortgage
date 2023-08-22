@@ -1,6 +1,8 @@
-# J.P. Mortgage, the NextGen AI solution that provides enhanced mortgage evaluation, powered by automated property valuation and credit risk analysis. 
+# J.P. Mortgage
 
-## A mortgage evaluation application built for SMU IS453 Financial Analytics in 2021.
+## Frontend component of JPMortgage, the NextGen AI solution that provides enhanced mortgage evaluation, powered by automated property valuation and credit risk analysis.
+
+### A mortgage evaluation application built for SMU IS453 Financial Analytics in 2021.
 
 #### Demo
 ![Demo](https://github.com/SlaveToJavascript/jpmortgage/blob/master/demo.gif?raw=true)
